@@ -4,7 +4,7 @@
 
 /***** JSLint Config *****/
 /*global angular  */
-(function() {
+(function(window, angular, undefined) {
 
   'use strict';
 
