@@ -1,2 +1,2 @@
-require('./src/angular-modal-service');
+require('./dst/angular-modal-service');
 module.exports = 'angularModalService';

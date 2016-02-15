@@ -4,13 +4,12 @@
 
 /***** JSLint Config *****/
 /*global angular  */
-(function() {
+(function(window, angular) {
 
   'use strict';
 
-  var module = angular.module('angularModalService', []);
-
-  module.factory('ModalService', ['$animate', '$document', '$compile', '$controller', '$http', '$rootScope', '$q', '$templateRequest', '$timeout',
+  angular.module('angularModalService', [])
+ .factory('ModalService', ['$animate', '$document', '$compile', '$controller', '$http', '$rootScope', '$q', '$templateRequest', '$timeout',
     function($animate, $document, $compile, $controller, $http, $rootScope, $q, $templateRequest, $timeout) {
 
     //  Get the body of the document, we'll add the modal to this.
@@ -159,4 +158,4 @@
     return new ModalService();
   }]);
 
-}());
+})(window, window.angular);
